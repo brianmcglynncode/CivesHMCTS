@@ -15,7 +15,7 @@
         "id": 3,
         "step": "Safeguarding & Vulnerable",
         "actor": "Presentation",
-        "action": "Special Measure Blur Etc"
+        "action": "Special Measure for Vulnerable People"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "id": 6,
         "step": "Integration & Process Efficiency",
         "actor": "Presentation",
-        "action": "How Supports Integration of systems, What APIs Provide"
+        "action": "How Supports Integration of systems, What APIs are Provided"
     },
     {
         "id": 7,
@@ -51,7 +51,7 @@
         "id": 9,
         "step": "Media Quality",
         "actor": "Presentation",
-        "action": "Work with court mics, Laptops Mics, Phones"
+        "action": "Work with in-court mics, Mobile Phones, Tablets"
     },
     {
         "id": 10,
@@ -75,7 +75,7 @@
         "id": 13,
         "step": "Compliance and Security",
         "actor": "Presentation",
-        "action": "ISO 27001"
+        "action": "ISO 27001, GDPR and Penetration Tests"
     },
     {
         "id": 14,
