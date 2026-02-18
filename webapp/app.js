@@ -12,9 +12,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     renderCards(demoData);
 
+    // Filter Logic
+    window.filterCards = function (filterType) {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const clickedBtn = document.querySelector(`.filter-btn.${filterType.replace(' ', '-')}`);
+
+        // Toggle active state
+        if (clickedBtn.classList.contains('active')) {
+            // If already active, clear filter (show all)
+            clickedBtn.classList.remove('active');
+            renderCards(demoData);
+        } else {
+            // Activate clicked button, deactivate others
+            buttons.forEach(btn => btn.classList.remove('active'));
+            clickedBtn.classList.add('active');
+
+            // Filter data
+            const filtered = demoData.filter(item =>
+                (item.actor || '').toLowerCase().includes(filterType)
+            );
+            renderCards(filtered);
+        }
+    };
+
     function renderCards(items) {
         grid.innerHTML = '';
+
+        if (items.length === 0) {
+            grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 50px;">No cards found matching filter.</div>';
+            return;
+        }
+
         items.forEach((item, index) => {
+            // ... existing render logic ...
             const card = document.createElement('div');
 
             // Determine styling based on actor
