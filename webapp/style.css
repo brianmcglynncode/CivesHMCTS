@@ -78,32 +78,49 @@ body {
     padding: 40px 20px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
-    /* Reduced margin */
+header.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
     animation: fadeInDown 1s ease-out;
 }
 
-.logo-row {
+.header-left,
+.header-right {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
     align-items: center;
+    gap: 20px;
+    flex: 1;
+    /* Ensure balanced spacing */
+}
+
+.header-right {
+    justify-content: flex-end;
+    /* Align right logo to edge */
+}
+
+.header-center {
+    text-align: center;
+    flex: 2;
+    /* Title takes more space */
 }
 
 .header-logo {
-    height: 50px;
-    /* Adjust as needed */
+    height: 60px;
+    /* Slightly larger */
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
     transition: transform 0.3s ease;
 }
 
 .header-logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
+
+/* Remove old styles */
+/* .logo-row ... */
 
 h1 {
     font-size: 3.5rem;
