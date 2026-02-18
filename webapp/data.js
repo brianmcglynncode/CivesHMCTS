@@ -92,7 +92,7 @@ window.demoData = [
     {
         "id": 16,
         "step": "Innovation Readiness",
-        "actor": "Full Demo",
+        "actor": "Presentation",
         "action": "What other part of solution are innovative. What innovations on Roadmap"
     }
 ];
