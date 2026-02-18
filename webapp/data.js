@@ -3,13 +3,13 @@ window.demoData = [
         "id": 1,
         "step": "Hearing Models",
         "actor": "Full Demo",
-        "action": "Flexible Controls, Waiting Rooms, Waiting Room Communications"
+        "action": "Flexible Hearing Models, Waiting Rooms, Waiting Room Communications"
     },
     {
         "id": 2,
         "step": "Judicial & Staff Control",
         "actor": "Full Demo",
-        "action": "Admit, Move, Pause Cases, Moving between hearing"
+        "action": "Admit, Move, Pause Cases, Moving between hearings"
     },
     {
         "id": 3,
@@ -27,7 +27,7 @@ window.demoData = [
         "id": 5,
         "step": "External Connectivity",
         "actor": "Full Demo",
-        "action": "Hospital , Prisons - How easy to join"
+        "action": "Join court on devices from Hospital , Prisons & Jails"
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@ window.demoData = [
         "id": 11,
         "step": "Customized Branding",
         "actor": "Full Demo",
-        "action": "Brand and Terminology, House Rules Roles and Labels"
+        "action": "Brand and Terminology, House Rules, Roles and Groups"
     },
     {
         "id": 12,
@@ -87,7 +87,7 @@ window.demoData = [
         "id": 15,
         "step": "In-Hearing Consultations",
         "actor": "Full Demo",
-        "action": "Alternate Apporaches"
+        "action": "Consultation Rooms and Side Rooms"
     },
     {
         "id": 16,
