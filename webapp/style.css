@@ -1,0 +1,361 @@
+:root {
+    --primary-bg: #0f172a;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #38bdf8;
+    --accent-glow: rgba(56, 189, 248, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Dynamic Background */
+.background-globes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.globe {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    animation: float 20s infinite alternate;
+}
+
+/* Dynamic Background Globes - using PPTX colors */
+.globe-1 {
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--accent-blue), transparent 70%);
+    top: -150px;
+    left: -150px;
+    opacity: 0.5;
+}
+
+.globe-2 {
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, var(--accent-purple), transparent 70%);
+    bottom: -150px;
+    right: -150px;
+    opacity: 0.4;
+    animation-delay: -10s;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeInDown 1s ease-out;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #fff, #94a3b8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    perspective: 1000px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Staggered animation delays handled in JS or CSS nth-child */
+.card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.25s;
+}
+
+/* ... continue as needed or use JS ... */
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.3), 0 0 20px var(--accent-glow);
+    border-color: var(--accent);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Header Alignment */
+.card-header {
+    display: flex;
+    justify-content: flex-start;
+    /* Left align */
+    align-items: center;
+    gap: 10px;
+    /* Space between ID and Title */
+    margin-bottom: 15px;
+}
+
+.card-id {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: rgba(56, 189, 248, 0.1);
+    padding: 4px 8px;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.card-step {
+    font-size: 1.1rem;
+    /* Prominent like old description */
+    color: #e2e8f0;
+    /* Brighter */
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: left;
+    /* Removed uppercase to look more like the old description style */
+}
+
+/* Description Text */
+.card-body h3 {
+    font-size: 0.9rem;
+    /* Smaller like old title */
+    margin-bottom: 0;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    /* Dimmer */
+    text-align: center;
+    font-weight: 400;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Gap for checkbox */
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.actor-avatar {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    color: white;
+}
+
+/* Default fallback */
+.actor-avatar.default {
+    background: linear-gradient(135deg, #94a3b8, #cbd5e1);
+}
+
+/* Full Demo - Green Theme */
+.actor-full-demo .actor-avatar {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    /* Green */
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+}
+
+.actor-full-demo .card-id {
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.1);
+}
+
+.actor-full-demo:hover {
+    border-color: #22c55e;
+}
+
+/* Presentation - Blue Theme */
+.actor-presentation .actor-avatar {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    /* Blue */
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+}
+
+.actor-presentation .card-id {
+    color: #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.actor-presentation:hover {
+    border-color: #3b82f6;
+}
+
+.actor-name {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    flex-grow: 1;
+}
+
+/* Checkbox Styles */
+.card-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--text-secondary);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    display: grid;
+    place-content: center;
+    transition: all 0.2s;
+}
+
+.card-checkbox::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transition: 0.2s transform ease-in-out;
+    box-shadow: inset 1em 1em white;
+    /* Checkmark color */
+    transform-origin: center;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.card-checkbox:checked {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.card-checkbox:checked::before {
+    transform: scale(1);
+}
+
+/* Completed State */
+.card.completed {
+    opacity: 0.5;
+    filter: grayscale(0.8);
+    transform: scale(0.98);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.card.completed:hover {
+    transform: scale(0.98);
+    /* Disable hover float */
+    box-shadow: none;
+    opacity: 0.6;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

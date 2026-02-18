@@ -1,0 +1,98 @@
+window.demoData = [
+    {
+        "id": 1,
+        "step": "Hearing Models",
+        "actor": "Full Demo",
+        "action": "Flexible Controls, Waiting Rooms, Waiting Room Communications"
+    },
+    {
+        "id": 2,
+        "step": "Judicial & Staff Control",
+        "actor": "Full Demo",
+        "action": "Admit, Move, Pause Cases, Moving between hearing"
+    },
+    {
+        "id": 3,
+        "step": "Safeguarding & Vulnerable",
+        "actor": "Presentation",
+        "action": "Special Measure Blur Etc"
+    },
+    {
+        "id": 4,
+        "step": "Accessibility & Inclusion",
+        "actor": "Presentation",
+        "action": "WCAG (Assistive Tech, and keyboards) & Interpretation"
+    },
+    {
+        "id": 5,
+        "step": "External Connectivity",
+        "actor": "Full Demo",
+        "action": "Hospital , Prisons - How easy to join"
+    },
+    {
+        "id": 6,
+        "step": "Integration & Process Efficiency",
+        "actor": "Presentation",
+        "action": "How Supports Integration of systems, What APIs Provide"
+    },
+    {
+        "id": 7,
+        "step": "Reporting and MI",
+        "actor": "Presentation",
+        "action": "Available out of Box, What can be developed"
+    },
+    {
+        "id": 8,
+        "step": "Recording",
+        "actor": "Full Demo",
+        "action": "Audio Only , video and audio recording"
+    },
+    {
+        "id": 9,
+        "step": "Media Quality",
+        "actor": "Presentation",
+        "action": "Work with court mics, Laptops Mics, Phones"
+    },
+    {
+        "id": 10,
+        "step": "Open Justice",
+        "actor": "Full Demo",
+        "action": "Observers, Streaming Broadcasts"
+    },
+    {
+        "id": 11,
+        "step": "Customized Branding",
+        "actor": "Full Demo",
+        "action": "Brand and Terminology, House Rules Roles and Labels"
+    },
+    {
+        "id": 12,
+        "step": "Unauthorized Video Recording",
+        "actor": "Presentation",
+        "action": "Roles and ability to record"
+    },
+    {
+        "id": 13,
+        "step": "Compliance and Security",
+        "actor": "Presentation",
+        "action": "ISO 27001"
+    },
+    {
+        "id": 14,
+        "step": "In Hearing Control",
+        "actor": "Presentation",
+        "action": "Roles (Judges, Participates, Evidence Sharing, Accidental Interruptions"
+    },
+    {
+        "id": 15,
+        "step": "In-Hearing Consultations",
+        "actor": "Full Demo",
+        "action": "Alternate Apporaches"
+    },
+    {
+        "id": 16,
+        "step": "Innovation Readiness",
+        "actor": "Full Demo",
+        "action": "What other part of solution are innovative. What innovations on Roadmap"
+    }
+];

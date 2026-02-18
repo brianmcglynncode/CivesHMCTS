@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "step": "1. Hearing Models\u200b",
+    "actor": "Family Court (Remote Hearing)",
+    "action": "Flexible Controls"
+  },
+  {
+    "id": 2,
+    "step": "1. Hearing Models\u200b",
+    "actor": "HMCTS",
+    "action": "Waiting Rooms"
+  },
+  {
+    "id": 3,
+    "step": "1. Hearing Models\u200b",
+    "actor": "HMCTS",
+    "action": "Waitin Rooms Communications"
+  },
+  {
+    "id": 4,
+    "step": "2. Judicial & Staff Control\u200b",
+    "actor": "Family Court (Remote Hearing)",
+    "action": "Admit, Move, Pause Cases"
+  },
+  {
+    "id": 5,
+    "step": "2. Judicial & Staff Control\u200b",
+    "actor": "HMCTS",
+    "action": "Moving Between Hearing"
+  },
+  {
+    "id": 6,
+    "step": "3. Safeguarding & Vulnerable\u200b",
+    "actor": "Family Court (Remote Hearing)",
+    "action": "Special Measure Blur Etc"
+  },
+  {
+    "id": 7,
+    "step": "4. Accessibility & Inclusion\u200b",
+    "actor": "Family Court (Remote Hearing)",
+    "action": "WCAG (Assistive Tech, and keyboards)"
+  },
+  {
+    "id": 8,
+    "step": "4. Accessibility & Inclusion\u200b",
+    "actor": "HMCTS",
+    "action": "Interpretation and Sign Language"
+  },
+  {
+    "id": 9,
+    "step": "5. External Connectivity \u200b",
+    "actor": "Family Court (Remote Hearing)",
+    "action": "Hospital , Prisons - How easy to join"
+  },
+  {
+    "id": 10,
+    "step": "6. Integration & Process Efficiency\u200b",
+    "actor": "Family Court (Remote Hearing)",
+    "action": "How Supports Integration of systems"
+  },
+  {
+    "id": 11,
+    "step": "6. Integration & Process Efficiency\u200b",
+    "actor": "HMCTS",
+    "action": "What API Provides"
+  },
+  {
+    "id": 12,
+    "step": "7. Reporting and MI\u200b",
+    "actor": "Family Court (Remote Hearing)",
+    "action": "Postman API Demo / Reporting Engine"
+  },
+  {
+    "id": 13,
+    "step": "7. Reporting and MI\u200b",
+    "actor": "HMCTS",
+    "action": "Available out of Box"
+  },
+  {
+    "id": 14,
+    "step": "7. Reporting and MI\u200b",
+    "actor": "HMCTS",
+    "action": "What can be developed"
+  },
+  {
+    "id": 15,
+    "step": "8. Recording\u200b",
+    "actor": "Family Court (Remote Hearing)",
+    "action": "Audio Only"
+  },
+  {
+    "id": 16,
+    "step": "8. Recording\u200b",
+    "actor": "HMCTS",
+    "action": "Video and Audio recording"
+  }
+]

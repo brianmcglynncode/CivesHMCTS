@@ -1,0 +1,10 @@
+dk1: #000000
+lt1: #FFFFFF
+dk2: #0E2841
+lt2: #E8E8E8
+accent1: #156082
+accent2: #E97132
+accent3: #196B24
+accent4: #0F9ED5
+accent5: #A02B93
+accent6: #4EA72E
