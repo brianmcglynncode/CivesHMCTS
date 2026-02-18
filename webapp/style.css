@@ -80,8 +80,29 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    /* Reduced margin */
     animation: fadeInDown 1s ease-out;
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.header-logo {
+    height: 50px;
+    /* Adjust as needed */
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
 }
 
 h1 {
